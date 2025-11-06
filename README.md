@@ -41,7 +41,7 @@ Access the [Airflow UI](http://localhost:8080). Password can be found in termina
 
 If you want to remove the default examples, you can do the following:
 
-- Set the `load_examples = False` in [.airflow/airflow.cfg].
+- Set the `load_examples = False` in [airflow.cfg](.airflow/airflow.cfg).
 - Reset the db using this command: `uv run airflow db reset`
 - Restart airflow standalone: `uv run airflow standalone`
 
