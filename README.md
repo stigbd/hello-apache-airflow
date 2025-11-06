@@ -39,6 +39,12 @@ uv run airflow standalone
 
 Access the [Airflow UI](http://localhost:8080). Password can be found in terminal or in [this file](.airflow/simple_auth_manager_passwords.json.generated).
 
+If you want to remove the default examples, you can do the following:
+
+- Set the `load_examples = False` in [.airflow/airflow.cfg].
+- Reset the db using this command: `uv run airflow db reset`
+- Restart airflow standalone: `uv run airflow standalone`
+
 ## Sources
 
 Nice writeup on how to load data into BigQuery from an API using Apache Airflow:
