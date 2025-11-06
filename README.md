@@ -47,11 +47,14 @@ If you want to remove the default examples, you can do the following:
 
 ## Sources
 
-Nice writeup on how to load data into BigQuery from an API using Apache Airflow:
-<https://medium.com/merkle-data-technology/orchestrate-airflow-pipeline-to-fetch-data-from-an-api-and-upload-it-to-bigquery-f93990bad723>
-
 Install using uv:
 <https://engineergatitu.medium.com/installing-apache-airflow-with-uv-a-modern-python-package-management-approach-1ba20cd1eb44>
 
 Quick start:
 <https://airflow.apache.org/docs/apache-airflow/stable/start.html#quick-start>
+
+Using TaskFlow API:
+<https://airflow.apache.org/docs/apache-airflow/stable/tutorial/taskflow.html>
+
+Nice writeup on how to load data into BigQuery from an API using Apache Airflow:
+<https://medium.com/merkle-data-technology/orchestrate-airflow-pipeline-to-fetch-data-from-an-api-and-upload-it-to-bigquery-f93990bad723>
