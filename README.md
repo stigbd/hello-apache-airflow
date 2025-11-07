@@ -5,9 +5,12 @@
 
 Source: <https://airflow.apache.org/use-cases/etl_analytics/>
 
-## Set up environment
+A core concept in Airflow is the DAG:
+Airflow is a platform that lets you build and run workflows. A workflow is represented as a Dag (a Directed Acyclic Graph), and contains individual pieces of work called Tasks, arranged with dependencies and data flows taken into account.
 
-Source: https://airflow.apache.org/docs/apache-airflow/stable/installation/installing-from-pypi.html
+Source: https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/overview.html
+
+## Set up environment
 
 Using uv to create a project:
 
@@ -28,7 +31,7 @@ Set environment variables and install:
 AIRFLOW_VERSION=3.1.2
 PYTHON_VERSION="$(uv run python -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')"
 CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
-uv pip install "apache-airflow[async,postgres,google]==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
+uv add "apache-airflow[async,postgres,google]==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
 ```
 
 Initalizing Airflow and run Airflow Standalone:
@@ -46,6 +49,9 @@ If you want to remove the default examples, you can do the following:
 - Restart airflow standalone: `uv run airflow standalone`
 
 ## Sources
+
+Install from pypi:
+<https://airflow.apache.org/docs/apache-airflow/stable/installation/installing-from-pypi.html>
 
 Install using uv:
 <https://engineergatitu.medium.com/installing-apache-airflow-with-uv-a-modern-python-package-management-approach-1ba20cd1eb44>
